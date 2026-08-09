@@ -6,6 +6,16 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/meizu/m1822
 
 PRODUCT_COPY_FILES += \
+    vendor/meizu/m1822/proprietary/product/etc/permissions/com.meizu.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.meizu.moto-uirefresh.xml \
+    vendor/meizu/m1822/proprietary/product/etc/permissions/com.meizu.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.meizu.motodisplay.xml \
+    vendor/meizu/m1822/proprietary/product/etc/permissions/privapp-permissions-com.meizu.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.meizu.camera2.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
+    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/acdbdata/common/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Bluetooth_cal.acdb \
     vendor/meizu/m1822/proprietary/vendor/etc/acdbdata/common/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/General_cal.acdb \
     vendor/meizu/m1822/proprietary/vendor/etc/acdbdata/common/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/common/Global_cal.acdb \
@@ -20,12 +30,82 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1822/proprietary/vendor/etc/acdbdata/na/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Hdmi_cal.acdb \
     vendor/meizu/m1822/proprietary/vendor/etc/acdbdata/na/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Headset_cal.acdb \
     vendor/meizu/m1822/proprietary/vendor/etc/acdbdata/na/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/na/Speaker_cal.acdb \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-m1822.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-m1822.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
+    vendor/meizu/m1822/proprietary/vendor/etc/meizu/mdmctbk/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/meizu/mdmctbk/ctbk_cfg.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/permissions/com.meizu.camera2.denali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.meizu.camera2.denali.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/permissions/com.meizu.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.meizu.motosignature.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml \
+    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin \
+    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin \
+    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_India.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_India.bin \
+    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin \
+    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_wlan_dictionary.dat \
     vendor/meizu/m1822/proprietary/vendor/firmware/AbovCapSense.BIN:$(TARGET_COPY_OUT_VENDOR)/firmware/AbovCapSense.BIN \
     vendor/meizu/m1822/proprietary/vendor/firmware/FT8006U_Pramboot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/FT8006U_Pramboot.bin \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530v1_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pfp.fw \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530v1_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pm4.fw \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
+    vendor/meizu/m1822/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
     vendor/meizu/m1822/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/meizu/m1822/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/meizu/m1822/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
@@ -43,17 +123,132 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1822/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/meizu/m1822/proprietary/vendor/firmware/novatek_ts-csot-NT36672A-180919-07-m1822.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts-csot-NT36672A-180919-07-m1822.bin \
     vendor/meizu/m1822/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
-    vendor/meizu/m1822/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt
+    vendor/meizu/m1822/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/10_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/11_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/11_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/12_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/12_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/13_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/13_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/14_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/14_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/15_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/15_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/16_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/16_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/7_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/8_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_qcrildb.sql \
+    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
 PRODUCT_PACKAGES += \
-    sensors.ssc \
+    CneApp \
+    MotCamera2 \
+    MotoSignatureApp \
+    QtiTelephonyService \
+    QtiTelephonyServicelibrary \
+    TimeService \
+    adpl \
+    adsprpcd \
+    android.hardware.biometrics.fingerprint@2.1-fpcservice \
+    android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.drm@1.2-service.widevine \
+    android.hardware.gatekeeper@1.0-impl-qti \
+    android.hardware.gatekeeper@1.0-service-qti \
+    android.hardware.keymaster@4.0-service-qti \
     audio.primary.msm8953-moto \
     camera.msm8953 \
+    capsense_reset \
+    charge_only_mode \
+    cnd \
+    cnss-daemon \
+    com.fingerprints.extension@1.0 \
+    com.meizu.motosignature \
+    com.qualcomm.qti.ant@1.0 \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.imscmservice-V2.2-java \
+    com.qualcomm.qti.imscmservice@1.0 \
+    com.qualcomm.qti.imscmservice@1.0_vendor \
+    com.qualcomm.qti.imscmservice@2.0 \
+    com.qualcomm.qti.imscmservice@2.0_vendor \
+    com.qualcomm.qti.imscmservice@2.1 \
+    com.qualcomm.qti.imscmservice@2.1_vendor \
+    com.qualcomm.qti.imscmservice@2.2 \
+    com.qualcomm.qti.imscmservice@2.2_vendor \
+    com.qualcomm.qti.uceservice-V2.0-java \
+    com.qualcomm.qti.uceservice-V2.1-java \
+    com.qualcomm.qti.uceservice@2.0 \
+    com.qualcomm.qti.uceservice@2.0_vendor \
+    com.qualcomm.qti.uceservice@2.1 \
+    com.qualcomm.qti.uceservice@2.1_vendor \
+    eglSubDriverAndroid \
+    energy-awareness \
+    fm_helium \
+    fm_qsoc_patches \
+    garden_app \
+    hvdcp_opti \
+    ims \
+    ims_rtp_daemon \
+    imsdatadaemon \
+    imsqmidaemon \
+    imsrcsd \
+    ipacm-diag \
+    irsc_util \
+    lib-imsSDP \
+    lib-imscamera \
+    lib-imscmservice \
+    lib-imsdpl \
+    lib-imsqimf \
+    lib-imsrcs-v2 \
+    lib-imsrcsbaseimpl \
+    lib-imsvideocodec \
+    lib-imsvt \
+    lib-imsvtcore \
+    lib-imsvtextutils \
+    lib-imsvtutils \
+    lib-imsxml \
+    lib-rtpcommon \
+    lib-rtpcore \
+    lib-rtpsl \
+    lib-siputility \
+    lib-uceservice \
+    libC2D2 \
+    libCB \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libGPreqcancel \
+    libGPreqcancel_svc \
+    libOmxVpp \
+    libOpenCL \
+    libQSEEComAPI \
+    libQTapGLES \
+    libSecureUILib \
+    libStDrvInt \
     lib_motsensorlistener \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
     libactuator_dw9763 \
     libactuator_dw9767 \
     libactuator_lc898217xh \
+    libadiertac \
     libadm \
+    libadreno_utils \
+    libadropbox \
+    libadsp_default_listener \
+    libadsp_fd_skel \
+    libadsprpc \
+    libapps_mem_heap \
+    libaudcal \
+    libaudioalsa \
+    libaudioparsers \
+    libbt-hidlclient \
+    libbtnv \
+    libc2d30_bltlib \
+    libcacertclient \
     libcdsprpc \
     libchromatix_mot_ov12a10_common \
     libchromatix_mot_ov12a10_cpp_hfr_120 \
@@ -156,13 +351,66 @@ PRODUCT_PACKAGES += \
     libchromatix_s5k4h7_m1822_video_full \
     libchromatix_s5k4h7_m1822_zsl_preview_3a \
     libchromatix_s5k4h7_m1822_zsl_video_3a \
+    libcne \
+    libcneapiclient \
+    libcneoplookup \
+    libcneqmiutils \
+    libconfigdb \
+    libcpion \
+    libcppf \
+    libdataitems \
     libdepthmapwrapper \
+    libdiag \
+    libdiag_system \
+    libdisp-aba \
+    libdrmfs \
+    libdrmtime \
+    libdsi_netctrl \
+    libdspCV_skel \
+    libdsutils \
+    libfastcvadsp \
+    libfastcvadsp_skel \
+    libfastcvadsp_stub \
+    libfastcvopt \
     libflash_pmic \
+    libfm-hci \
+    libgarden \
+    libgarden_haltests_e2e \
+    libgcs \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgdtap \
+    libgpustats \
     libgralloc1 \
+    libgsl \
     libhal_dbg \
+    libhdcpsrm \
+    libhdr_tm \
+    libidl \
+    libimscamera_jni \
+    libimsmedia_jni \
+    libizat_client_api \
+    libizat_core \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
+    liblbs_core \
+    libllvm-glnext \
+    libllvm-qcom \
+    libloc_api_v02 \
+    liblocationservice \
+    liblocationservice_glue \
+    liblog_vendor \
+    liblowi_client \
+    liblowi_wifihal \
+    liblqe \
+    libmdmcutback \
+    libmdmdetect \
+    libmm-hdcpmgr \
     libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
@@ -251,223 +499,39 @@ PRODUCT_PACKAGES += \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmcamera_vstab_module \
+    libmmieffectswrapper \
     libmmjpeg \
     libmmjpeg_interface \
     libmmlib2d_interface \
+    libmmosal_proprietary \
     libmmqjpeg_codec \
     libmmqjpegdma \
     libmot_afd \
     libmot_gpu_mapper \
     libmot_lux_standardization \
     libmotaudioutils \
+    libmotext_inf \
     libmotimager_utils \
-    libqomx_core \
-    libqomx_jpegdec \
-    libqomx_jpegenc \
-    libqomx_jpegenc_pipe \
-    libremosaic_daemon \
-    libseemore \
-    libsensorndkbridge \
-    libtinyalsa-moto \
-    libtinycompress_vendor \
-    libmmieffectswrapper \
-    libspeakerbundle \
-    com.fingerprints.extension@1.0 \
-    MotCamera2 \
-    charge_only_mode \
-    android.hardware.biometrics.fingerprint@2.1-fpcservice
-#
-# Automatically generated file. DO NOT MODIFY
-#
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/meizu/m1822
-
-PRODUCT_COPY_FILES += \
-    vendor/meizu/m1822/proprietary/product/etc/permissions/com.meizu.moto-uirefresh.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.meizu.moto-uirefresh.xml \
-    vendor/meizu/m1822/proprietary/product/etc/permissions/com.meizu.motodisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.meizu.motodisplay.xml \
-    vendor/meizu/m1822/proprietary/product/etc/permissions/privapp-permissions-com.meizu.camera2.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.meizu.camera2.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
-    vendor/meizu/m1822/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile4.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile4.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/meizu/mdmctbk/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/meizu/mdmctbk/ctbk_cfg.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/permissions/com.meizu.camera2.denali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.meizu.camera2.denali.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/permissions/com.meizu.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.meizu.motosignature.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Argentina.bin \
-    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_Brazil.bin \
-    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_India.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_India.bin \
-    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv_epa.bin \
-    vendor/meizu/m1822/proprietary/vendor/etc/wifi/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_wlan_dictionary.dat \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530v1_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pfp.fw \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530v1_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pm4.fw \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
-    vendor/meizu/m1822/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/10_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/11_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/11_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/12_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/12_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/13_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/13_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/14_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/14_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/15_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/15_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/16_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/16_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/7_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/8_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_qcrildb.sql \
-    vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_qcrildb.sql
-
-PRODUCT_PACKAGES += \
-    com.qualcomm.qti.imscmservice@1.0_vendor \
-    com.qualcomm.qti.imscmservice@2.0_vendor \
-    com.qualcomm.qti.imscmservice@2.1_vendor \
-    com.qualcomm.qti.imscmservice@2.2_vendor \
-    com.qualcomm.qti.uceservice@2.0_vendor \
-    com.qualcomm.qti.uceservice@2.1_vendor \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libQTapGLES \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    android.hardware.bluetooth@1.0-impl-qti \
-    vendor.qti.gnss@3.0-impl \
-    vendor.qti.hardware.fm@1.0-impl \
-    vendor.qti.hardware.iop@2.0-impl \
-    vulkan.msm8953 \
-    lib-imsSDP \
-    lib-imscmservice \
-    lib-imsdpl \
-    lib-imsqimf \
-    lib-imsrcs-v2 \
-    lib-imsrcsbaseimpl \
-    lib-imsvtcore \
-    lib-imsxml \
-    lib-rtpcommon \
-    lib-rtpcore \
-    lib-rtpsl \
-    lib-siputility \
-    lib-uceservice \
-    libC2D2 \
-    libCB \
-    libOmxVpp \
-    libOpenCL \
-    libQSEEComAPI \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadreno_utils \
-    libadsp_default_listener \
-    libadsprpc \
-    libaudcal \
-    libaudioalsa \
-    libaudioparsers \
-    libbtnv \
-    libc2d30_bltlib \
-    libconfigdb \
-    libdataitems \
-    libdiag \
-    libdsi_netctrl \
-    libdsutils \
-    libfastcvadsp_stub \
-    libfastcvopt \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libgpustats \
-    libgsl \
-    libhdr_tm \
-    libidl \
-    libizat_client_api \
-    libizat_core \
-    liblbs_core \
-    libllvm-glnext \
-    libllvm-qcom \
-    libloc_api_v02 \
-    liblocationservice \
-    liblocationservice_glue \
-    liblowi_client \
-    liblqe \
-    libmdmdetect \
-    libmm-hdcpmgr \
-    libmmosal_proprietary \
     libnetmgr \
+    libnetmgr_common \
+    libnetmgr_nr_fusion \
+    libnetmgr_rmnet_ext \
+    libnlnetmgr \
     libpdmapper \
     libpdnotifier \
     libperfconfig \
     libperfgluelayer \
     libperipheral_client \
+    libq3dtools_adreno \
+    libq3dtools_esx \
     libqcci_legacy \
     libqcmaputils \
+    libqcrilFramework \
+    libqcrildatactl \
     libqdi \
+    libqdma_file_agent \
     libqdp \
+    libqisl \
     libqmi \
     libqmi_cci \
     libqmi_client_helper \
@@ -475,55 +539,152 @@ PRODUCT_PACKAGES += \
     libqmi_common_so \
     libqmi_csi \
     libqmi_encdec \
+    libqmimotext \
     libqmiservices \
+    libqomx_core \
+    libqomx_jpegdec \
+    libqomx_jpegenc \
+    libqomx_jpegenc_pipe \
+    libqrtr \
+    libqsocket \
     libqti-iopd-client \
-    libqti-perfd-client \
     libqti-perfd \
+    libqti-perfd-client \
     libqti-util \
     libqti-utils \
     libqtigef \
+    libqtikeymaster4 \
     librcc \
+    libremosaic_daemon \
+    libril-qc-hal-qmi \
+    libril-qc-ltedirectdisc \
+    libril-qc-radioconfig \
+    libril-qcril-hook-oem \
+    librilqmiservices \
+    librpmb \
     libscalar \
     libscveBlobDescriptor \
+    libscveBlobDescriptor_skel \
     libscveBlobDescriptor_stub \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
+    libscveObjectSegmentation_skel \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libscvePanorama \
     libscvePanorama_lite \
+    libscveT2T_skel \
     libsdedrm \
     libsdm-color \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
+    libsecureui_svcsock \
+    libseemore \
     libsensor1 \
     libsensor_reg \
+    libsensorndkbridge \
+    libsettings \
+    libslimclient \
+    libspeakerbundle \
+    libssd \
+    libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
+    libtinyalsa-moto \
+    libtinycompress_vendor \
     libtinyxml2_1 \
     libvpplibrary \
+    libvqzip \
+    libwms \
+    libwqe \
+    libwvdrmengine \
+    libwvhidl \
     libxml \
     libxtadapter \
-    libwvdrmengine \
+    loc_launcher \
+    lowi-server \
+    netmgrd \
+    pm-proxy \
+    pm-service \
+    port-bridge \
+    qcrild \
+    qcrild_librilutils \
+    qcrilhook \
+    qcrilmsgtunnel \
+    qmi_motext_hook \
+    qseecomd \
+    qti \
+    qtibus \
+    qtimutex \
+    rmt_storage \
     sensor_calibrate \
+    sensors.qti \
     sensors.rp \
+    sensors.ssc \
+    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    tftp_server \
+    thermal-engine \
+    time_daemon \
     vendor.display.color@1.0 \
+    vendor.display.color@1.0-service \
     vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
     vendor.display.postproc@1.0 \
+    vendor.qti.data.factory-V1.0-java \
+    vendor.qti.data.factory-V2.0-java \
+    vendor.qti.data.factory-V2.1-java \
+    vendor.qti.data.factory@2.0 \
+    vendor.qti.data.factory@2.1_vendor \
+    vendor.qti.data.slm-V1.0-java \
+    vendor.qti.data.slm@1.0_vendor \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
     vendor.qti.gnss@2.0 \
     vendor.qti.gnss@2.1 \
-    vendor.qti.gnss@3.0-service \
     vendor.qti.gnss@3.0 \
+    vendor.qti.gnss@3.0-impl \
+    vendor.qti.gnss@3.0-service \
+    vendor.qti.gnss@3.0-service.xml \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0-impl \
+    vendor.qti.hardware.cacert@1.0 \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.data.cne.internal.api@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
+    vendor.qti.hardware.data.connection-V1.0-java \
+    vendor.qti.hardware.data.connection-V1.1-java \
+    vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.dynamicdds-V1.0-java \
+    vendor.qti.hardware.data.dynamicdds@1.0 \
+    vendor.qti.hardware.data.iwlan-V1.0-java \
+    vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.data.latency-V1.0-java \
+    vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.factory-V1.0-java \
+    vendor.qti.hardware.factory-V1.1-java \
+    vendor.qti.hardware.factory@1.0 \
+    vendor.qti.hardware.factory@1.1 \
+    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.fm@1.0_vendor \
+    vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@1.0_vendor \
+    vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.iop@2.0-impl \
     vendor.qti.hardware.iop@2.0_vendor \
+    vendor.qti.hardware.perf@2.0-service \
+    vendor.qti.hardware.qteeconnector@1.0 \
+    vendor.qti.hardware.qteeconnector@1.0-impl \
+    vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
     vendor.qti.hardware.radio.ims@1.1 \
@@ -548,215 +709,41 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.scve.objecttracker@1.0 \
+    vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper \
     vendor.qti.hardware.scve.objecttracker@1.0_vendor \
+    vendor.qti.hardware.scve.panorama@1.0 \
+    vendor.qti.hardware.scve.panorama@1.0-adapter-helper \
     vendor.qti.hardware.scve.panorama@1.0_vendor \
+    vendor.qti.hardware.tui_comm@1.0 \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.callinfo@1.0_vendor \
+    vendor.qti.ims.rcsconfig-V1.0-java \
+    vendor.qti.ims.rcsconfig@1.0 \
     vendor.qti.ims.rcsconfig@1.0_vendor \
+    vendor.qti.ims.rcsconfig@1.1 \
     vendor.qti.ims.rcsconfig@1.1_vendor \
+    vendor.qti.imsrtpservice@2.0 \
     vendor.qti.imsrtpservice@2.0_vendor \
+    vendor.qti.imsrtpservice@2.1 \
     vendor.qti.imsrtpservice@2.1-service-Impl \
     vendor.qti.imsrtpservice@2.1_vendor \
-    vendor.qti.voiceprint@1.0 \
-    libcppf \
-    libvqzip \
-    com.qualcomm.qti.ant@1.0 \
-    android.hardware.gatekeeper@1.0-impl-qti \
-    vendor.qti.hardware.bluetooth_sar@1.0-impl \
-    vendor.qti.hardware.qteeconnector@1.0-impl \
-    libGPreqcancel \
-    libGPreqcancel_svc \
-    libSecureUILib \
-    libStDrvInt \
-    libadropbox \
-    libbt-hidlclient \
-    libcacertclient \
-    libcne \
-    libcneapiclient \
-    libcneoplookup \
-    libcneqmiutils \
-    libcpion \
-    libdisp-aba \
-    libdrmfs \
-    libdrmtime \
-    libgarden \
-    libgarden_haltests_e2e \
-    libgdtap \
-    libhdcpsrm \
-    libkeymasterdeviceutils \
-    libkeymasterprovision \
-    libkeymasterutils \
-    liblog_vendor \
-    liblowi_wifihal \
-    libmdmcutback \
-    libmotext_inf \
-    libnetmgr_common \
-    libnetmgr_nr_fusion \
-    libnetmgr_rmnet_ext \
-    libnlnetmgr \
-    libqcrilFramework \
-    libqcrildatactl \
-    libqdma_file_agent \
-    libqisl \
-    libqmimotext \
-    libqrtr \
-    libqsocket \
-    libqtikeymaster4 \
-    libril-qc-hal-qmi \
-    libril-qc-ltedirectdisc \
-    libril-qc-radioconfig \
-    libril-qcril-hook-oem \
-    librilqmiservices \
-    librpmb \
-    libsecureui_svcsock \
-    libsensorndkbridge \
-    libsettings \
-    libslimclient \
-    libssd \
-    libsystem_health_mon \
-    libwms \
-    libwqe \
-    libwvhidl \
-    qcrild_librilutils \
-    qtibus \
-    qtimutex \
-    vendor.display.color@1.2 \
-    vendor.qti.data.factory@2.0 \
-    vendor.qti.data.factory@2.1_vendor \
-    vendor.qti.data.slm@1.0_vendor \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.data.cne.internal.api@1.0 \
-    vendor.qti.hardware.data.cne.internal.constants@1.0 \
-    vendor.qti.hardware.data.cne.internal.server@1.0 \
-    vendor.qti.hardware.data.connection@1.0 \
-    vendor.qti.hardware.data.connection@1.1 \
-    vendor.qti.hardware.data.dynamicdds@1.0 \
-    vendor.qti.hardware.data.iwlan@1.0 \
-    vendor.qti.hardware.data.latency@1.0 \
-    vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.factory@1.0 \
-    vendor.qti.hardware.factory@1.1 \
-    vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.latency@2.0 \
-    libadsp_fd_skel \
-    libapps_mem_heap \
-    libdspCV_skel \
-    libfastcvadsp \
-    libfastcvadsp_skel \
-    libscveBlobDescriptor_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    com.qualcomm.qti.imscmservice@1.0 \
-    com.qualcomm.qti.imscmservice@2.0 \
-    com.qualcomm.qti.imscmservice@2.1 \
-    com.qualcomm.qti.imscmservice@2.2 \
-    com.qualcomm.qti.uceservice@2.0 \
-    com.qualcomm.qti.uceservice@2.1 \
-    fm_helium \
-    lib-imscamera \
-    lib-imsvideocodec \
-    lib-imsvt \
-    lib-imsvtextutils \
-    lib-imsvtutils \
-    libdiag_system \
-    libfm-hci \
-    libimscamera_jni \
-    libimsmedia_jni \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.iop@1.0 \
-    vendor.qti.hardware.iop@2.0 \
-    vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper \
-    vendor.qti.hardware.scve.objecttracker@1.0 \
-    vendor.qti.hardware.scve.panorama@1.0-adapter-helper \
-    vendor.qti.hardware.scve.panorama@1.0 \
-    vendor.qti.ims.callinfo@1.0 \
-    vendor.qti.ims.rcsconfig@1.0 \
-    vendor.qti.ims.rcsconfig@1.1 \
-    vendor.qti.imsrtpservice@2.0 \
-    vendor.qti.imsrtpservice@2.1 \
-    MotoSignatureApp \
-    CneApp \
-    TimeService \
-    QtiTelephonyService \
-    ims \
-    qcrilmsgtunnel \
-    com.meizu.motosignature \
-    QtiTelephonyServicelibrary \
-    com.qualcomm.qti.imscmservice-V2.0-java \
-    com.qualcomm.qti.imscmservice-V2.1-java \
-    com.qualcomm.qti.imscmservice-V2.2-java \
-    com.qualcomm.qti.uceservice-V2.0-java \
-    com.qualcomm.qti.uceservice-V2.1-java \
-    qcrilhook \
-    vendor.qti.data.factory-V1.0-java \
-    vendor.qti.data.factory-V2.0-java \
-    vendor.qti.data.factory-V2.1-java \
-    vendor.qti.data.slm-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.0-java \
-    vendor.qti.hardware.data.connection-V1.1-java \
-    vendor.qti.hardware.data.dynamicdds-V1.0-java \
-    vendor.qti.hardware.data.iwlan-V1.0-java \
-    vendor.qti.hardware.data.latency-V1.0-java \
-    vendor.qti.hardware.factory-V1.0-java \
-    vendor.qti.hardware.factory-V1.1-java \
-    vendor.qti.ims.callinfo-V1.0-java \
-    vendor.qti.ims.rcsconfig-V1.0-java \
     vendor.qti.latency-V2.0-java \
-    vendor.qti.gnss@3.0-service.xml \
-    adpl \
-    adsprpcd \
-    capsense_reset \
-    cnd \
-    cnss-daemon \
-    energy-awareness \
-    fm_qsoc_patches \
-    garden_app \
-    hvdcp_opti \
-    android.hardware.bluetooth@1.0-service-qti \
-    android.hardware.drm@1.2-service.widevine \
-    android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.keymaster@4.0-service-qti \
-    qcrild \
-    vendor.display.color@1.0-service \
-    vendor.qti.hardware.perf@2.0-service \
-    vendor.qti.hardware.qteeconnector@1.0-service \
-    ims_rtp_daemon \
-    imsdatadaemon \
-    imsqmidaemon \
-    imsrcsd \
-    ipacm-diag \
-    irsc_util \
-    loc_launcher \
-    lowi-server \
-    netmgrd \
-    pm-proxy \
-    pm-service \
-    port-bridge \
-    qmi_motext_hook \
-    qseecomd \
-    qti \
-    rmt_storage \
-    sensors.qti \
-    tftp_server \
-    thermal-engine \
-    time_daemon \
-    xtra-daemon \
-    xtwifi-client \
-    xtwifi-inet-agent
-
-PRODUCT_PACKAGES += \
-    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
-    vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_bin \
+    vendor.qti.latency@2.0 \
+    vendor.qti.voiceprint@1.0 \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_Argentina_bin \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_Brazil_bin \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_India_bin \
+    vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_bin \
     vendor_firmware_wlan_prima_WCNSS_qcom_wlan_nv_epa_bin \
     vendor_firmware_wlan_prima_WCNSS_wlan_dictionary_dat \
-    vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv2_adreno_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
+    vendor_lib64_libq3dtools_adreno_so \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vulkan.msm8953 \
+    xtra-daemon \
+    xtwifi-client \
+    xtwifi-inet-agent

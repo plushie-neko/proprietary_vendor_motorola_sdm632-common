@@ -5,7 +5,6 @@
 soong_namespace {
     imports: [
         "device/meizu/m1822",
-        "device/meizu/m1822",
         "hardware/qcom-caf/msm8996",
         "hardware/qcom-caf/wlan",
         "vendor/meizu/m1822",
@@ -6380,21 +6379,6 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
-}
-
-# Merged from common
-//
-// Automatically generated file. DO NOT MODIFY
-//
-
-soong_namespace {
-    imports: [
-        "device/meizu/m1822",
-        "hardware/meizu",
-        "hardware/qcom-caf/msm8996",
-        "hardware/qcom-caf/wlan",
-        "vendor/qcom/opensource/dataservices",
-    ],
 }
 
 cc_prebuilt_library_shared {

@@ -62,8 +62,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-m1822.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-m1822.rc \
     vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.2-service.widevine.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/meizu/m1822/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
     vendor/meizu/m1822/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/meizu/m1822/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/meizu/m1822/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -85,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1822/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/permissions/com.meizu.camera2.denali.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.meizu.camera2.denali.xml \
-    vendor/meizu/m1822/proprietary/vendor/etc/permissions/com.meizu.motosignature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.meizu.motosignature.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_csot_720p_622.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_ofilm_720p_622.xml \
     vendor/meizu/m1822/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_vid_tianma_720p_622.xml \
@@ -148,7 +145,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CneApp \
     MotCamera2 \
-    MotoSignatureApp \
     QtiTelephonyService \
     QtiTelephonyServicelibrary \
     TimeService \
@@ -158,9 +154,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.2-service.widevine \
-    android.hardware.gatekeeper@1.0-impl-qti \
-    android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.keymaster@4.0-service-qti \
     audio.primary.msm8953-moto \
     camera.msm8953 \
     capsense_reset \
@@ -168,7 +161,6 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     com.fingerprints.extension@1.0 \
-    com.meizu.motosignature \
     com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
@@ -399,9 +391,6 @@ PRODUCT_PACKAGES += \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
-    libkeymasterdeviceutils \
-    libkeymasterprovision \
-    libkeymasterutils \
     liblbs_core \
     libllvm-glnext \
     libllvm-qcom \
@@ -557,7 +546,6 @@ PRODUCT_PACKAGES += \
     libqti-util \
     libqti-utils \
     libqtigef \
-    libqtikeymaster4 \
     librcc \
     libremosaic_daemon \
     libril-qc-hal-qmi \

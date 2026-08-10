@@ -10813,6 +10813,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
+                "vendor.qti.hardware.perf@2.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libc++",
@@ -10829,6 +10830,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
+                "vendor.qti.hardware.perf@2.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libc++",
@@ -10862,6 +10864,7 @@ cc_prebuilt_library_shared {
                 "libqti-util",
                 "libhidlbase",
                 "libhidltransport",
+                "vendor.qti.hardware.perf@2.0",
                 "libbase",
                 "libthermalclient",
                 "libqti-perfd-client",
@@ -10885,6 +10888,7 @@ cc_prebuilt_library_shared {
                 "libqti-util",
                 "libhidlbase",
                 "libhidltransport",
+                "vendor.qti.hardware.perf@2.0",
                 "libbase",
                 "libthermalclient",
                 "libqti-perfd-client",
@@ -14697,6 +14701,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcutils",
                 "libhardware",
+                "vendor.qti.hardware.bluetooth_sar@1.0",
                 "android.hardware.bluetooth@1.0",
                 "android.hardware.bluetooth@1.0-impl-qti",
                 "libc++",
@@ -14975,12 +14980,18 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libnl",
                 "libidl",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
+                "vendor.qti.hardware.data.cne.internal.constants@1.0",
+                "vendor.qti.hardware.data.latency@1.0",
                 "libandroid_net",
                 "vendor.qti.data.factory@2.0",
-                "vendor.qti.data.factory@2.1",
+                "vendor.qti.data.factory@2.1_vendor",
+                "vendor.qti.hardware.data.qmi@1.0",
+                "vendor.qti.hardware.data.dynamicdds@1.0",
                 "vendor.qti.ims.rcsconfig@1.0_vendor",
                 "vendor.qti.ims.rcsconfig@1.1_vendor",
+                "vendor.qti.latency@2.0",
                 "libwpa_client",
                 "libc++",
                 "libc",
@@ -15016,7 +15027,7 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
                 "vendor.qti.data.factory@2.0",
-                "vendor.qti.data.factory@2.1",
+                "vendor.qti.data.factory@2.1_vendor",
                 "libandroid_net",
                 "libc++",
                 "libc",
@@ -16156,6 +16167,9 @@ cc_prebuilt_library_shared {
                 "libandroid_net",
                 "libutils",
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
+                "vendor.qti.hardware.data.latency@1.0",
+                "vendor.qti.latency@2.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -16193,6 +16207,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libandroid_net",
                 "libqti_vndfwk_detect",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
                 "libwpa_client",
                 "libc++",
@@ -16366,7 +16381,12 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
+                "vendor.qti.hardware.data.cne.internal.constants@1.0",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
+                "vendor.qti.hardware.data.dynamicdds@1.0",
+                "vendor.qti.hardware.data.qmi@1.0",
                 "vendor.qti.ims.rcsconfig@1.0_vendor",
+                "vendor.qti.latency@2.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -16386,7 +16406,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.data.factory@2.1",
+    name: "vendor.qti.data.factory@2.1_vendor",
     stem: "vendor.qti.data.factory@2.1",
     owner: "meizu",
     strip: {
@@ -16401,8 +16421,13 @@ cc_prebuilt_library_shared {
                 "vendor.qti.data.factory@2.0",
                 "vendor.qti.data.slm@1.0_vendor",
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
+                "vendor.qti.hardware.data.cne.internal.constants@1.0",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
+                "vendor.qti.hardware.data.dynamicdds@1.0",
+                "vendor.qti.hardware.data.qmi@1.0",
                 "vendor.qti.ims.rcsconfig@1.0_vendor",
                 "vendor.qti.ims.rcsconfig@1.1_vendor",
+                "vendor.qti.latency@2.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -16453,6 +16478,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.bluetooth_sar@1.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -16523,6 +16549,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so",
             ],
             shared_libs: [
+                "vendor.qti.hardware.data.cne.internal.constants@1.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -16542,6 +16569,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.cne.internal.constants@1.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -16571,6 +16599,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.cne.internal.server@1.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -16581,6 +16610,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so",
             ],
             shared_libs: [
+                "vendor.qti.hardware.data.cne.internal.constants@1.0",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -16661,6 +16691,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.dynamicdds@1.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -16725,6 +16756,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.latency@1.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -16754,6 +16786,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.data.qmi@1.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -16904,6 +16937,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.latency@2.0",
     owner: "meizu",
     strip: {
         none: true,
@@ -18561,14 +18595,6 @@ android_app_import {
     system_ext_specific: true,
 }
 
-dex_import {
-    name: "com.meizu.motosignature",
-    owner: "meizu",
-    jars: [
-        "proprietary/vendor/framework/com.meizu.motosignature.jar",
-    ],
-    soc_specific: true,
-}
 
 dex_import {
     name: "QtiTelephonyServicelibrary",
@@ -18879,8 +18905,12 @@ cc_prebuilt_binary {
                 "libhidltransport",
                 "libandroid_net",
                 "vendor.qti.hardware.data.cne.internal.api@1.0",
+                "vendor.qti.hardware.data.cne.internal.constants@1.0",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
+                "vendor.qti.hardware.data.latency@1.0",
                 "vendor.qti.data.factory@2.0",
-                "vendor.qti.data.factory@2.1",
+                "vendor.qti.data.factory@2.1_vendor",
+                "vendor.qti.latency@2.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -19058,6 +19088,7 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libhidltransport",
                 "android.hardware.bluetooth@1.0",
+                "vendor.qti.hardware.bluetooth_sar@1.0",
                 "vendor.qti.hardware.btconfigstore@1.0",
                 "libqti_vndfwk_detect",
                 "libc++",
@@ -19200,6 +19231,7 @@ cc_prebuilt_binary {
                 "libhwbinder",
                 "libhidlbase",
                 "libhidltransport",
+                "vendor.qti.hardware.perf@2.0",
                 "libperfconfig",
                 "libperfgluelayer",
                 "libc++",
@@ -20078,396 +20110,4 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.bluetooth_sar@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.cacert@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.cne.internal.api@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-                "vendor.qti.hardware.data.cne.internal.constants@1.0",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.cne.internal.constants@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.cne.internal.server@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-                "vendor.qti.hardware.data.cne.internal.constants@1.0",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.dynamicdds@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.latency@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.qmi@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.latency@2.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.latency@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsecureui_svcsock",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsecureui_svcsock.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.data.factory@2.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-                "vendor.qti.hardware.data.cne.internal.api@1.0",
-                "vendor.qti.hardware.data.cne.internal.constants@1.0",
-                "vendor.qti.hardware.data.cne.internal.server@1.0",
-                "vendor.qti.hardware.data.dynamicdds@1.0",
-                "vendor.qti.hardware.data.qmi@1.0",
-                "vendor.qti.latency@2.0",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.data.factory@2.1",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-                "vendor.qti.data.factory@2.0",
-                "vendor.qti.hardware.data.cne.internal.api@1.0",
-                "vendor.qti.hardware.data.cne.internal.constants@1.0",
-                "vendor.qti.hardware.data.cne.internal.server@1.0",
-                "vendor.qti.hardware.data.dynamicdds@1.0",
-                "vendor.qti.hardware.data.qmi@1.0",
-                "vendor.qti.latency@2.0",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
 }

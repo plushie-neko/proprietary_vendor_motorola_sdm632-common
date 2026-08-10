@@ -123,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1822/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/meizu/m1822/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/meizu/m1822/proprietary/vendor/firmware/novatek_ts-csot-NT36672A-180919-07-m1822.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts-csot-NT36672A-180919-07-m1822.bin \
-    vendor/meizu/m1822/proprietary/vendor/firmware/st21nfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw.bin \
     vendor/meizu/m1822/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/meizu/m1822/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \

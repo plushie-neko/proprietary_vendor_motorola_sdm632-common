@@ -15536,7 +15536,6 @@ cc_prebuilt_library_shared {
                 "libsensorndkbridge",
                 "libqmimotext",
                 "liblog",
-                "libqsap_sdk",
                 "libxml2",
                 "libc++",
                 "libc",

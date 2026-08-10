@@ -15412,6 +15412,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmdmcutback.so",
             ],
             shared_libs: [
+                "libqsap_sdk",
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libutils",
